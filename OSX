@@ -125,7 +125,7 @@
    58  curl 0.0.0.0:8000
    59  sudo restart docker.io
    60  sudo docker.io ps
-   61  sudo docker.io run -i -t -v /var/run/docker.sock:/docker.sock shipyard/deploy cleanup
+   61  	
    62  sudo docker.io ps
    63  sudo docker.io run -i -t -v /var/run/docker.sock:/docker.sock shipyard/deploy setup
    64  curl 0.0.0.0:8000
@@ -138,7 +138,7 @@
    71  shipyard-agent -url http://0.0.0.0:8000 -register
    72  ls -a
    73  shipyard-agent -url http://0.0.0.0:8000 -key 59cfc68cde1e41a1af33c0a28628c9b1
-   74  sudo shipyard-agent -url http://0.0.0.0:8000 -key 59cfc68cde1e41a1af33c0a28628c9b1
+   74  sudo shipyard-agent -url http://0.0.0.0:8000 -key 28fe6de69cfd4415897e471a47e18901
    75  sudo docker.io pull postgres:9.4
    76  sudo shipyard-agent -url http://0.0.0.0:8000 -key 59cfc68cde1e41a1af33c0a28628c9b1 &
    77  echo
