@@ -1,0 +1,149 @@
+# Sean's computer
+ 1543  vagrant box list
+ 1544  vagrant init
+ 1545  vagrant init --help
+ 1546  rm Vagrantfile
+ 1547  vagrant init phusion/ubuntu-14.04-amd64
+ 1548  vagrant up
+ 1549  vagrant ssh
+ 1550  cd ..
+ 1551  cd zig
+ 1552  ls
+ 1553  vgd
+ 1554  vagrant destroy
+ 1555  vagrant up
+ 1556  vagrant destroy
+ 1557  vi Vagrantfile
+ 1558  vagrant up
+ 1559  vagrant ssh
+ 1560  ls
+ 1561  vi Vagrantfile
+ 1562  vagrant reload
+ 1563  vi Vagrantfile
+ 1564  vagrant reload
+ 1565  vi Vagrantfile
+ 1566  vagrant reload
+ 1567  vagrant ssh
+ 1568  vi Vagrantfile
+ 1569  ls
+ 1570  vagrant reload
+ 1571  curl http://192.168.1.147:8000
+ 1572  cd ..
+ 1573  cd zig
+ 1574  alias
+ 1575  echo 'alias vgs="vagrant ssh"' >> .zshrc
+ 1576  alias vgs="vagrant ssh\n"
+ 1577  alias
+ 1578  vgs
+ 1579  git init
+ 1580  git add remote
+ 1581  git add
+ 1582  git add-remote https://github.com/arbiterofcool/zig.git
+ 1583  git --help
+ 1584  ls
+ 1585  mkdir src/python
+ 1586  mkdir src
+ 1587  mkdir src/python
+ 1588  ls
+ 1589  ls src
+ 1590  touch src/python/README
+ 1591  vim src/python/README
+ 1592  vim
+ 1593  vi
+ 1594  cat src/python/README
+ 1595  cd src/python/README
+ 1596  cd src/python
+ 1597  cd ..
+ 1598  cd //
+ 1599  cd ~/dev/zig
+ 1600  ls
+ 1601  vi Vagrantfile
+ 1602  touch README
+ 1603  touch NOTES
+ 1604  rm NOTES
+ 1605  OSX
+ 1606  vi OSX
+
+# Vagrant
+    1  ps
+    2  sudo ps
+    3  sudo docker.io run -i -t -v /var/run/docker.sock:/docker.sock shipyard/deploy setup
+    4  curl http://0.0.0.0:8080
+    5  curl http://0.0.0.0:8000
+    6  curl http://0.0.0.0:8005
+    7  exit
+    8  sudo docker.io run -i -t -v /var/run/docker.sock:/docker.sock shipyard/deploy run
+    9  curl http://0.0.0.0:8000
+   10  curl http://0.0.0.0:8005
+   11  sudo docker.io run -i -t -v /var/run/docker.sock:/docker.sock shipyard/deploy restart
+   12  sudo docker.io run -i -t -v /var/run/docker.sock:/docker.sock shipyard/deploy setup
+   13  curl http://0.0.0.0:8000
+   14  curl http://0.0.0.0:8005
+   15  sudo docker.io run -i -t -v /var/run/docker.sock:/docker.sock shipyard/deploy restart
+   16  docker ps
+   17  docker.io
+   18  docker.io ps
+   19  sudo docker.io ps
+   20  sudo docker.io run -i -t -v /var/run/docker.sock:/docker.sock shipyard/deploy cleanup
+   21  sudo docker.io run -i -t -v /var/run/docker.sock:/docker.sock shipyard/deploy restart
+   22  sudo docker.io run -i -t -v /var/run/docker.sock:/docker.sock shipyard/deploy setup
+   23  curl http://0.0.0.0:8000
+   24  curl http://0.0.0.0:8005
+   25  curl http://0.0.0.0:80
+   26  curl http://0.0.0.0
+   27  sudo vi /etc/default/ufw
+   28  curl http://0.0.0.0
+   29  sudo ufw disable
+   30  curl http://0.0.0.0
+   31  curl http://0.0.0.0:8000
+   32  sudo ufw enable
+   33  curl http://0.0.0.0:8000
+   34  sudo docker.io run -i -t -v /var/run/docker.sock:/docker.sock shipyard/deploy cleanup
+   35  sudo docker.io run -i -t -v /var/run/docker.sock:/docker.sock shipyard/deploy setup
+   36  curl http://0.0.0.0:8000
+   37  curl http://0.0.0.0:8005
+   38  sudo vi /etc/default/ufw
+   39  curl http://172.17.42.1:8000
+   40  exit
+   41  docker run -i -t -v /var/run/docker.sock:/docker.sock shipyard/deploy
+   42  sudo docker.io run -i -t -v /var/run/docker.sock:/docker.sock shipyard/deploy
+   43  sudo docker.io run -i -t -v /var/run/docker.sock:/docker.sock shipyard/deploy cleanup
+   44  sudo docker.io run -i -t -v /var/run/docker.sock:/docker.sock shipyard/deploy setup
+   45  docker.io ps
+   46  sudo docker.io ps
+   47  curl 0.0.0.0:5432
+   48  curl 0.0.0.0:49154
+   49  curl 0.0.0.0:8000
+   50  curl 0.0.0.0:8005
+   51  sudo docker.io -H tcp://127.0.0.1:4243 -H unix:///var/run/docker.sock
+   52  sudo docker.io -H tcp://127.0.0.1:4243
+   53  sudo docker.io restart
+   54  sudo ufw reload
+   55  sudo ufw allow 2375/tcp
+   56  sudo docker.io run -i -t -v /var/run/docker.sock:/docker.sock shipyard/deploy setup
+   57  curl 0.0.0.0:8005
+   58  curl 0.0.0.0:8000
+   59  sudo restart docker.io
+   60  sudo docker.io ps
+   61  sudo docker.io run -i -t -v /var/run/docker.sock:/docker.sock shipyard/deploy cleanup
+   62  sudo docker.io ps
+   63  sudo docker.io run -i -t -v /var/run/docker.sock:/docker.sock shipyard/deploy setup
+   64  curl 0.0.0.0:8000
+   65  curl https://github.com/shipyard/shipyard-agent/releases/download/v0.3.2/shipyard-agent -L -o /usr/local/bin/shipyard-agent
+   66  sudo curl https://github.com/shipyard/shipyard-agent/releases/download/v0.3.2/shipyard-agent -L -o /usr/local/bin/shipyard-agent
+   67  chmod +x /usr/local/bin/shipyard-agent
+   68  sudo chmod +x /usr/local/bin/shipyard-agent
+   69  sudo ./shipyard-agent -url http://0.0.0.0:8000 -register
+   70  ls
+   71  shipyard-agent -url http://0.0.0.0:8000 -register
+   72  ls -a
+   73  shipyard-agent -url http://0.0.0.0:8000 -key 59cfc68cde1e41a1af33c0a28628c9b1
+   74  sudo shipyard-agent -url http://0.0.0.0:8000 -key 59cfc68cde1e41a1af33c0a28628c9b1
+   75  sudo docker.io pull postgres:9.4
+   76  sudo shipyard-agent -url http://0.0.0.0:8000 -key 59cfc68cde1e41a1af33c0a28628c9b1 &
+   77  echo
+   78  echo test
+   79  pip
+   80  gem
+   81  rails
+   82  npm
