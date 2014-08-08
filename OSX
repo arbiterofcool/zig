@@ -128,17 +128,13 @@
    61  	
    62  sudo docker.io ps
    63  sudo docker.io run -i -t -v /var/run/docker.sock:/docker.sock shipyard/deploy setup
-   64  curl 0.0.0.0:8000
-   65  curl https://github.com/shipyard/shipyard-agent/releases/download/v0.3.2/shipyard-agent -L -o /usr/local/bin/shipyard-agent
+
    66  sudo curl https://github.com/shipyard/shipyard-agent/releases/download/v0.3.2/shipyard-agent -L -o /usr/local/bin/shipyard-agent
-   67  chmod +x /usr/local/bin/shipyard-agent
    68  sudo chmod +x /usr/local/bin/shipyard-agent
-   69  sudo ./shipyard-agent -url http://0.0.0.0:8000 -register
-   70  ls
    71  shipyard-agent -url http://0.0.0.0:8000 -register
+
    72  ls -a
-   73  shipyard-agent -url http://0.0.0.0:8000 -key 59cfc68cde1e41a1af33c0a28628c9b1
-   74  sudo shipyard-agent -url http://0.0.0.0:8000 -key 28fe6de69cfd4415897e471a47e18901
+   74  sudo shipyard-agent -url http://0.0.0.0:8000 -key e3f6dfd4b59447b29a7dbbc16336a88e
    75  sudo docker.io pull postgres:9.4
    76  sudo shipyard-agent -url http://0.0.0.0:8000 -key 59cfc68cde1e41a1af33c0a28628c9b1 &
    77  echo
@@ -147,3 +143,24 @@
    80  gem
    81  rails
    82  npm
+
+
+8/7/14 arby
+    1  sudo apt-get update
+    2  gpasswd -a vagrant docker
+    3  sudo gpasswd -a vagrant docker
+    4  apt-get install lxc-docker
+    5  sudo apt-get install lxc-docker
+    6  sudo vi /etc/default/ufw
+    7  sudo ufw disable
+    8  sudo ufw enable
+    9  docker
+   10  sudo docker run -i -t -v /var/run/docker.sock:/docker.sock shipyard/deploy setup
+   11  curl https://github.com/shipyard/shipyard-agent/releases/download/v0.3.2/shipyard-agent -L -o /usr/local/bin/shipyard-agent
+   12  s
+   13  su
+   14  sudo chmod +x /usr/local/bin/shipyard-agent
+   15  sudo curl https://github.com/shipyard/shipyard-agent/releases/download/v0.3.2/shipyard-agent -L -o /usr/local/bin/shipyard-agent
+   16  sudo chmod +x /usr/local/bin/shipyard-agent
+   17  shipyard-agent -url http://0.0.0.0:8000 -register
+   18  sudo shipyard-agent -url http://0.0.0.0:8000 -key e3f6dfd4b59447b29a7dbbc16336a88e
